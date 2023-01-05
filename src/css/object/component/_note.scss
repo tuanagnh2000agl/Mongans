@@ -1,0 +1,92 @@
+.c-note{
+    border: 3px solid #D7597E;
+    background: #fff;
+    padding: 19px 30px 21px;
+    display: flex;
+    position: relative;
+    @include media-breakpoint-sp{
+        flex-direction: column;
+    }
+    &.--pickup{
+        border: 1px solid #8881B6;
+    }
+      
+    &__title{
+        font-size: ( 16px / $font-size) * 1rem;
+        font-family: "HiraKakuPro";
+        color: #D7597E;
+        width: 35.6%;
+        display: flex;
+        align-items: center;
+        font-weight: bold;
+        @include media-breakpoint-sp{
+            width: 100%;
+        }
+        &.--edit{
+            width: 20.4%;
+            margin-left: 20px;
+            margin-top: 4px;
+            line-height: 1.6;
+            @include media-breakpoint-sp{
+                width: 100%;
+                margin: 0;
+            }
+        }
+        &.--pickup{
+            color: #6559B8;
+            border-right: 1px solid #8881B6;
+            padding-left: 43px;
+            line-height: 1.5;
+            @include media-breakpoint-sp{
+                padding-left: 10px;
+            }
+            @include media-breakpoint-sp{
+                border: 0;
+                border-bottom: 1px solid #8881B6;
+            }
+        }
+    }
+    &__content{
+        font-size: ( 12px / $font-size) * 1rem;
+        font-family: "HiraKakuPro";
+        flex: 1;
+        padding: 5px 15px 0 49px;
+        letter-spacing: -0.3px;
+        line-height: 2.14;
+        font-feature-settings: "palt" 1;
+        @include media-breakpoint-sp{
+            padding-left: 10px;
+        }
+        &.--edit{
+            letter-spacing: -0.2px;
+            @include media-breakpoint-sp{
+                padding: 0;
+            }
+        }
+    }
+    &__pickUp{
+        border-radius: 50%;
+        background: #7B73B1;
+        position: absolute;
+        line-height: 1;
+        display: flex;
+        font-size: ( 10px / $font-size) * 1rem;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        width: 64px;
+        height: 64px;
+        top: -39px;
+        left: 19px;
+        z-index: 10;
+        letter-spacing: 1.5px;
+        @include media-breakpoint-sp{
+            width: 50px;
+            height: 50px;
+            top: -20px;
+            left: -10px;
+            letter-spacing: 0;
+        }
+
+    }
+}

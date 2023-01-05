@@ -1,0 +1,71 @@
+.c-plant{
+    &__heading{
+        margin-bottom: 60px;
+        h2{
+            font-size: ( 30px / $font-size) * 1rem;
+            color: #6559B8;
+            font-family: "HannariMincho";
+            width: fit-content;
+            margin: 0 auto; 
+            letter-spacing: -3px;
+            line-height: 1.6;
+            border-bottom: 1px solid #6559B8;
+        }
+    }
+    &__list{
+        display: flex;
+        &.--three{
+            padding: 0 87px;
+            @include media-breakpoint-tab-sp{
+                padding: 0 30px;
+            }
+            @include media-breakpoint-sp{
+                flex-direction: column;
+            }
+            margin-bottom: 26px;
+        }
+        &.--four{
+            margin: 0 -12px;
+            @include media-breakpoint-sp{
+                flex-wrap: wrap;
+                .c-plant__item{
+                    width: 48%;
+                    flex: unset;
+                }
+            }
+            .c-plant__item{
+                width: 50%;
+            }
+            .c-plant__text {
+                padding-left: 11px;
+            }
+        }
+    }
+    &__item{
+        text-align: center;
+        line-height: 2.2;
+        flex: 1;
+        @include media-breakpoint-sp{
+            margin-bottom: 30px;
+        }
+    }
+    &__title{
+        font-size: ( 17px / $font-size) * 1rem;
+        font-family: "HannariMincho";
+        color: #6559B8;
+        line-height: 2;
+        margin-top: 3px;
+        letter-spacing: -2px;
+    }
+    &__text{
+        font-size: 0.75rem;
+        padding: 0 13px 0 17px;
+        letter-spacing: 0.7px;
+        text-align: left;
+        font-feature-settings: "palt" 1;
+        @include media-breakpoint-sp{
+            text-align: center;
+            padding: 0;
+        }
+    }
+}

@@ -1,0 +1,62 @@
+				</article>
+				<!-- /.<%= getArticleClass('.'); %> -->
+			</main>
+			<!-- /#primary -->
+			<!-- <div class="c-pagetop js-pagetop" id="is-backtop">
+				<img src="<%= getRelativePath('/images/index/icon_pagetop.svg'); %>" alt="TOP">
+				<span class="u-onlyPc">TOP</span>
+			</div> -->
+			<!-- /#pagetop -->
+		</div>
+		<!-- /#content -->
+		<footer class="l-footer" id="is-footer">
+			<div class="l-footer__inner">
+				<div class="l-footer__contain">
+					<div class="l-footer__logo">
+						<div class="l-footer__logo__col">
+							<img class="--irodori" src="<%= getRelativePath('/images/common/irodori.png'); %>" alt="irodori">
+						</div>
+						<div class="l-footer__logo__col">
+							<img class="--cosme" src="<%= getRelativePath('/images/common/cosme.png'); %>" alt="cosme">
+							<img class="" src="<%= getRelativePath('/images/common/funtoshare.png'); %>" alt="Fun to share">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="l-footer__menu">
+				<div class="l-footer__inner --edit">
+					<ul class="l-footer__list">
+						<li class="l-footer__item">
+							<a href="#">取扱店舗</a>
+						</li>
+						<li class="l-footer__item">
+							<a href="#">掲載メディア</a>
+						</li>
+						<li class="l-footer__item">
+							<a href="#">特定商取引法</a>
+						</li>
+						<li class="l-footer__item">
+							<a href="#">プライバシーポリシー</a>
+						</li>
+						<li class="l-footer__item">
+							<a href="#">サイトマップ</a>
+						</li>
+						<li class="l-footer__item">
+							<a href="#">会社案内</a>
+						</li>
+					</ul>
+					<div class="l-footer__copyright">Copyright© 2017 Irodori CO.,LTD. All Rights Reserved.</div>
+				</div>
+			</div>
+		</footer> 
+		<!-- /#footer -->
+	</div>
+	<!-- /#all -->
+	<script src="<%= getRelativePath('/js/jquery-3.6.0.min.js'); %>"></script>
+	<script src="<%= getRelativePath('/js/script.js'); %>"></script>
+	<% if(getPageId() == 'index') { %>  
+		<script src="<%= getRelativePath('/js/slick.min.js'); %>"></script>
+		<script src="<%= getRelativePath('/js/index.js'); %>"></script>
+	<% } %>
+</body>
+</html>

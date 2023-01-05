@@ -1,0 +1,42 @@
+.c-table{
+    &__title{
+        background: #A0CDD3;
+        font-size: ( 17px / $font-size) * 1rem;
+        font-family: "HannariMincho";
+        color: #fff;
+        text-align: center;
+        line-height: 1;
+        padding: 7px 0;
+    }
+    &__gird{
+        background: #f3f3f3;
+        &__list{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 15px 15px 0;
+            justify-content: space-between;
+            @include media-breakpoint-sp{
+                padding: 10px;
+            }
+        }
+        &__item{
+            background: #fff;
+            width: 23.7%;
+            height: 35px;
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: "HannariMincho";
+            color: #010101;
+            margin-bottom: 15px;
+            letter-spacing: -2px;
+            @include media-breakpoint-tab-sp{
+                width: 48%;
+            }
+            @include media-breakpoint-sp{
+                width: 100%;
+            }
+        }
+    }
+}

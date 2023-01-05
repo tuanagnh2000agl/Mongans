@@ -1,0 +1,62 @@
+.c-content{
+    padding: 91px 0 113px;
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    &::after{
+        content: "";
+        position: absolute;
+        background-image: url('./images/index/background02.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        max-width: 739px;
+        width: 92%;
+        height: 491px;
+        top: 0;
+        left: 24vw;
+        @media only screen and (max-width: 1200px) {
+            left: 18vw;
+        }
+        @include media-breakpoint-tab-sp{
+            display: none;
+        }
+    }
+    &__contain{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+        mix-blend-mode: multiply;
+    }
+    &__mogans{
+        font-size: ( 30px / $font-size) * 1rem;
+        font-family: "HannariMincho";
+        color: #414141;
+        margin-bottom: 12px;
+        line-height: 1.2;
+        letter-spacing: -5.3px;
+    }
+    &__logan{
+        margin-bottom: 42px;
+    }
+    &__heading1{
+        font-size: ( 50px / $font-size) * 1rem;
+        font-family: "HannariMincho";
+        line-height: 1;
+        color: #E13F70;
+        width: fit-content;
+        border-bottom: 2px solid #E13F70;
+        padding-bottom: 6px;
+        letter-spacing: -6px;
+    }
+    &__direc{
+        font-size: ( 14px / $font-size) * 1rem;
+        font-family: "HiraKakuPro";
+    }
+    &__img{
+        display: none;
+        @include media-breakpoint-tab-sp{
+            display: block;
+        }
+    }
+}

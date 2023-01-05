@@ -1,0 +1,42 @@
+.c-card{
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &__heading{
+        font-family: "HannariMincho";
+        font-size: ( 20px / $font-size) * 1rem;
+        color: #7B6DA2;
+        letter-spacing: 2.7px;
+    }
+    &__item{
+        padding: 30px;
+        background: #fff;
+        width: 49%;
+        margin-bottom: 30px;
+        @include media-breakpoint-tab-sp{
+            padding: 15px;
+        }
+        @include media-breakpoint-sp{
+            width: 100%;
+        }
+    }
+    &__content{
+        &__text{
+            font-size: ( 14px / $font-size) * 1rem;
+            font-family: "HiraKakuPro";
+            color: #010101;
+            margin-top: 16px;
+            span{
+                float: right;
+                img{
+                    margin-top: 4px;
+                }
+            }
+            .clear{
+                clear: both;
+            }
+        }
+    }
+}

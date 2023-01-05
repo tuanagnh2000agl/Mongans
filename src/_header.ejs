@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">  
+	<title><%= getHeadPageTitle(); %></title>
+	<meta name="description" content="<%= getDescription(); %>">
+	<meta property="og:locale" content="ja_JP">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="<%= getSiteUrl(); %>">
+	<meta property="og:title" content="<%= getSiteTitle(); %>">
+	<meta property="og:description" content="<%= getDescription(); %>">
+	<meta property="og:image" content="<%= getSiteUrl(); %>/ogp.jpg">
+	<meta property="og:site_name" content="<%= getSiteTitle(); %>">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=yes">
+	<meta name="format-detection" content="telephone=no,email=no,address=no">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Rokkitt:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="shortcut icon" href="<%= getRelativePath('/favicon.ico'); %>">
+	<link rel="apple-touch-icon" href="<%= getRelativePath('/apple-touch-icon.png'); %>">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="<%= getRelativePath('/css/slick.css'); %>">
+	<link rel="stylesheet" href="<%= getRelativePath('/style.css'); %>">
+</head>
+<body class="<%= getBodyClass(); %>">
+	<div id="all">
+		<header class="l-header is-header">
+			<div class="l-header__inner">
+				<div class="l-header__content">
+					<div class="l-header__tools">
+						<div class="l-header__logo">
+							<span>自然派コスメの（mogans）モーガンズ 公式オンラインストア</span>
+							<h1>
+								<a href="./">
+									<img src="<%= getRelativePath('/images/common/logo.png'); %>" alt="mogans">
+								</a>
+							</h1>
+						</div>
+						<div class="l-header__search">
+							<div class="l-header__search__info">
+								<span><i class="fas fa-chevron-right"></i>はじめての方へ</span>
+								<span><i class="fas fa-chevron-right"></i>新規会員登録</span>
+								<span><i class="fas fa-chevron-right"></i>お問い合わせ</span>
+							</div>
+							<div class="l-header__search__keyword">
+								<input type="text" placeholder="キーワードを入力してください">
+								<i class="fa-solid fa-magnifying-glass"></i>
+							</div>
+						</div>
+						<div class="l-header__regis">
+							<ul class="l-header__regis__list">
+								<li class="l-header__regis__login">
+									<img src="<%= getRelativePath('/images/common/login.png'); %>" alt="ログイン">
+									<span>ログイン</span>
+								</li>
+								<li class="l-header__regis__mypage">
+									<img src="<%= getRelativePath('/images/common/mypage.png'); %>" alt="マイページ">
+									<span>マイページ</span>
+								</li>
+							</ul>
+							<a href="#" class="c-btn">
+								<img src="<%= getRelativePath('/images/common/cart.png'); %>" alt="カートを見る">
+								<span>カートを見る</span>
+							</a>
+						</div>
+					</div>
+					<nav class="l-header__menu">
+						<ul class="l-header__list">
+							<li class="l-header__item">
+								<a href="#" class="l-header__link">
+									<span class="l-header__link__en">PRODUCT</span>									
+									<span class="l-header__link__jp">商品一覧</span>
+								</a>
+							</li>
+							<li class="l-header__item">
+								<a href="#" class="l-header__link">
+									<span class="l-header__link__en">CONCEPT</span>									
+									<span class="l-header__link__jp">コンセプト</span>
+								</a>
+							</li>
+							<li class="l-header__item">
+								<a href="#" class="l-header__link">
+									<span class="l-header__link__en">INGREDIENTS</span>									
+									<span class="l-header__link__jp">天然成分について</span>
+								</a>
+							</li>
+							<li class="l-header__item">
+								<a href="#" class="l-header__link">
+									<span class="l-header__link__en">VOICE</span>									
+									<span class="l-header__link__jp">愛用者の声</span>
+								</a>
+							</li>
+							<li class="l-header__item">
+								<a href="#" class="l-header__link">
+									<span class="l-header__link__en">Q&A</span>									
+									<span class="l-header__link__jp">よくある質問</span>
+								</a>
+							</li>
+						</ul>
+						<div class="l-header__menu__login">
+							<div class="l-header__menu__regis">
+								<ul class="l-header__menu__regis__list">
+									<li class="l-header__menu__regis__login">
+										<img src="<%= getRelativePath('/images/common/login.png'); %>" alt="ログイン">
+										<span>ログイン</span>
+									</li>
+									<li class="l-header__menu__regis__mypage">
+										<img src="<%= getRelativePath('/images/common/mypage.png'); %>" alt="マイページ">
+										<span>マイページ</span>
+									</li>
+								</ul>
+								<a href="#" class="c-btn">
+									<img src="<%= getRelativePath('/images/common/cart.png'); %>" alt="カートを見る">
+									<span>カートを見る</span>
+								</a>
+							</div>
+						</div>
+					</nav>
+					<div class="l-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</div>
+				</div>
+			</div> 
+		</header>
+		<!-- /#header -->  
+		<div class="l-content">
+			<main id="l-primary"><% if (getPageId() == 'index') { %>
+				<div class="c-mainvisual">
+					<img src="<%= getRelativePath('/images/common/mainvisual.jpg'); %>" alt="Image manvisual">
+				</div><% } else { %>
+				<div class="c-pagetitle">
+					<div class="c-pagetitle__image"></div>
+					<h2 class="c-pagetitle__heading"><% if (_.indexOf(_.keys(config.categories), config.page.category) !== -1) { %>
+						<strong><%- getEachPageTitle(); %></strong>
+						<% } %>
+					</h2>
+				</div>
+				<% } %>
+				<%- include('_breadline'); %>
+				<article class="<%= getArticleClass(); %>" id="js-articles">

@@ -1,0 +1,122 @@
+.c-statistical{
+    &__inner{
+        display: flex;
+        @include media-breakpoint-sp{
+            flex-direction: column;
+        }
+    }
+    &__img{
+        width: 51.7%;
+        position: relative;
+        @include media-breakpoint-sp{
+            width: 100%;
+            text-align: center;
+        }
+        img{
+            position: absolute;
+            top: 1px;
+            left: -1px;
+            @include media-breakpoint-sp{
+                position: unset;
+            }
+        }
+    }
+    &__content{
+        flex: 1;
+        font-size: ( 14px / $font-size) * 1rem;
+        margin-top: 17px;
+        line-height: 1.9;
+        letter-spacing: 0.7px;
+        font-feature-settings: "palt" 1;
+        @include media-breakpoint-sp{
+            width: 100%;
+        }
+    }
+    &__reason{
+        background: #f9f5f6;
+        display: flex;
+        border-radius: 10px;
+        margin-top: 20px;
+        max-width: 800px;
+        width: 100%;
+        margin-left: auto;
+        padding-bottom: 16px;
+        @include media-breakpoint-sp{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
+        &__col{
+            width: 50%;
+            @include media-breakpoint-sp{
+                width: 80%;
+            }
+        }
+        &__title{
+            font-size: ( 20px / $font-size) * 1rem;
+            width: fit-content;
+            margin: 16px 0 0 29px;
+            color: #555555;
+            position: relative;
+            letter-spacing: 2px;
+            @include media-breakpoint-sp{
+                margin: 20px 0;
+            }
+            &::before{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 19px;
+                height: 31px;
+                background: url('./images/index/left.png') no-repeat;
+                left: -27px;
+                top: 6px;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 19px;
+                height: 31px;
+                background: url('./images/index/right.png') no-repeat;
+                right: -27px;
+                top: 6px;
+            }
+        }
+        &__list{
+            margin-top: 23px;
+            padding-left: 68px;
+            @include media-breakpoint-sp{
+                padding-left: 0;
+            }
+        }
+        &__item{
+            display: flex;
+            align-items: center;
+            margin-bottom: 14px;
+          .--iconTick{
+            display: block;
+            border: 1px solid #555555;
+            width: 13px;
+            height: 13px;
+            position: relative;
+            margin-right: 15px;
+            &::after{
+                content: "";
+                position: absolute;
+                display: block;
+                background: url('./images/index/ticked.svg') no-repeat;
+                top: -7px;
+                left: -3px;
+                width: 20px;
+                height: 15px;
+
+            }
+          }  
+          .--reason{
+            flex: 1;
+            line-height: 1;
+            letter-spacing: 1.5px;
+          }
+        }
+    }
+}

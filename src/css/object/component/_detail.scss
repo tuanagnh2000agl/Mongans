@@ -1,0 +1,131 @@
+.c-detail{
+    &__cloud{
+        position: relative;
+        @include media-breakpoint-tab-sp{
+            text-align: center;
+        }
+        span{
+            text-align: center;
+            color: #333333;
+            font-size: ( 14px / $font-size) * 1rem;
+            position: absolute;
+            min-width: 160px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        &.--cloud1{
+            margin-top: 45px;
+            left: -13px;
+            @include media-breakpoint-sp{
+                left: 0;
+            }
+        }
+        &.--cloud2{
+            left: 33px;
+            top: 3px;
+            @include media-breakpoint-sp{
+                left: 0;
+                top: 0;
+            }
+        }
+        &.--cloud3{
+            margin-top: 45px;
+            right: -27px;
+            @include media-breakpoint-sp{
+                right: 0;
+            }
+        }
+    }
+    &__Img{
+        position: relative;
+        left: 17px;
+        @include media-breakpoint-tab-sp{
+            text-align: center;
+       }
+    }
+    &__product{
+        &__name{
+            font-size: ( 14px / $font-size) * 1rem;
+            font-family: "HiraKakuPro";
+            color: #D3416D;
+            text-align: right;
+            margin-top: 57px;
+            letter-spacing: -1.1px;
+            line-height: 1.6;
+            margin-bottom: 5px;
+            &.--edit{
+                text-align: left;
+                @include media-breakpoint-tab-sp{
+                    text-align: center;
+                }
+            }
+            @include media-breakpoint-tab-sp{
+                 text-align: center;
+            }
+        }
+        &__note{
+            font-size: ( 12px / $font-size) * 1rem;
+            font-family: "HiraKakuPro";
+            color: #555555;
+            text-align: right;
+            letter-spacing: 0.5px;
+            margin-bottom: 20px;
+            &.--edit{
+                text-align: left;
+                @include media-breakpoint-tab-sp{
+                    text-align: center;
+                }
+            }
+            @include media-breakpoint-tab-sp{
+                 text-align: center;
+            }
+        }
+        &__capacity{
+            font-size: ( 20px / $font-size) * 1rem;
+            font-family: "HiraKakuPro";
+            color: #555555;
+            text-align: right;
+            margin-bottom: 13px;
+            &.--edit{
+                text-align: left;
+                @include media-breakpoint-tab-sp{
+                    text-align: center;
+                }
+            }
+            @include media-breakpoint-tab-sp{
+                 text-align: center;
+            }
+            .--ml{
+                font-size: ( 14px / $font-size) * 1rem;
+            }
+            .tax{
+                font-size: ( 13px / $font-size) * 1rem;
+            }
+        }
+        &__btn{
+            border-radius: 3px;
+            background: #E13F70;
+            display: block;
+            line-height: 1;
+            text-align: center;
+            max-width: 100%;
+            padding: 18px 0;
+            width: 100%;
+            position: relative;
+            letter-spacing: 1px;
+            font-size: ( 14px / $font-size) * 1rem;
+            color: #fff;
+            font-family: "HiraKakuPro";
+            @include media-breakpoint-tab-sp{
+                max-width: 100%;
+            }
+            i{
+                position: absolute;
+                right: 23px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+}

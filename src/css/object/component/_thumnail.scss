@@ -1,0 +1,58 @@
+.c-thumnail{
+    &__list{
+        display: flex;
+        @include media-breakpoint-sp{
+            flex-direction: column;
+        }
+        &.--one{
+            justify-content: center;
+        }
+    }
+    &__item{
+        @include media-breakpoint-sp{
+            text-align: center;
+        }
+        &.--img2{
+            position: relative;
+            right: -44px;
+            @media only screen and (max-width: 1200px) {
+                right: 0;
+            }
+        }
+        &.--edit1{
+            height: 263px;
+            width: 100%;
+            position: relative;
+            img{
+                position: absolute;
+                top: -107px;
+                left: 145px;
+                @media only screen and (max-width: 1200px) {
+                    left: 100px;
+                }
+                @include media-breakpoint-tab-sp{
+                    left: 0;
+                }
+                @include media-breakpoint-sp{
+                    position: unset;
+                }
+            }
+            @include media-breakpoint-sp{
+                height: unset;
+                position: unset;
+            }
+        }
+        &.--img3{
+            position: relative;
+            z-index: 1;
+        }
+        &.--img4{
+            position: relative;
+            top: 31px;
+            left: 27px;
+            @include media-breakpoint-sp{
+                left: 0;
+            }
+        }
+    }
+}
