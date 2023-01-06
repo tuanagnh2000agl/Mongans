@@ -1,12 +1,6 @@
 				</article>
 				<!-- /.<%= getArticleClass('.'); %> -->
 			</main>
-			<!-- /#primary -->
-			<!-- <div class="c-pagetop js-pagetop" id="is-backtop">
-				<img src="<%= getRelativePath('/images/index/icon_pagetop.svg'); %>" alt="TOP">
-				<span class="u-onlyPc">TOP</span>
-			</div> -->
-			<!-- /#pagetop -->
 		</div>
 		<!-- /#content -->
 		<footer class="l-footer" id="is-footer">
@@ -14,11 +8,17 @@
 				<div class="l-footer__contain">
 					<div class="l-footer__logo">
 						<div class="l-footer__logo__col">
-							<img class="--irodori" src="<%= getRelativePath('/images/common/irodori.png'); %>" alt="irodori">
+							<a href="./">
+								<img class="--irodori" src="<%= getRelativePath('/images/common/irodori.png'); %>" alt="irodori">
+							</a>
 						</div>
 						<div class="l-footer__logo__col">
-							<img class="--cosme" src="<%= getRelativePath('/images/common/cosme.png'); %>" alt="cosme">
-							<img class="" src="<%= getRelativePath('/images/common/funtoshare.png'); %>" alt="Fun to share">
+							<a href="./">
+								<img class="--cosme" src="<%= getRelativePath('/images/common/cosme.png'); %>" alt="cosme">
+							</a>
+							<a href="./">
+								<img src="<%= getRelativePath('/images/common/funtoshare.png'); %>" alt="Fun to share">
+							</a>
 						</div>
 					</div>
 				</div>
@@ -52,6 +52,7 @@
 		<!-- /#footer -->
 	</div>
 	<!-- /#all -->
+
 	<script src="<%= getRelativePath('/js/jquery-3.6.0.min.js'); %>"></script>
 	<script src="<%= getRelativePath('/js/script.js'); %>"></script>
 	<% if(getPageId() == 'index') { %>  

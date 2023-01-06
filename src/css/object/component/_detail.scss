@@ -17,14 +17,14 @@
         &.--cloud1{
             margin-top: 45px;
             left: -13px;
-            @include media-breakpoint-sp{
+            @include media-breakpoint-tab-sp{
                 left: 0;
             }
         }
         &.--cloud2{
             left: 33px;
             top: 3px;
-            @include media-breakpoint-sp{
+            @include media-breakpoint-tab-sp{
                 left: 0;
                 top: 0;
             }
@@ -32,8 +32,9 @@
         &.--cloud3{
             margin-top: 45px;
             right: -27px;
-            @include media-breakpoint-sp{
+            @include media-breakpoint-tab-sp{
                 right: 0;
+                margin: 0;
             }
         }
     }
@@ -42,12 +43,12 @@
         left: 17px;
         @include media-breakpoint-tab-sp{
             text-align: center;
+            left: 0;
        }
     }
     &__product{
         &__name{
             font-size: ( 14px / $font-size) * 1rem;
-            font-family: "HiraKakuPro";
             color: #D3416D;
             text-align: right;
             margin-top: 57px;
@@ -66,7 +67,6 @@
         }
         &__note{
             font-size: ( 12px / $font-size) * 1rem;
-            font-family: "HiraKakuPro";
             color: #555555;
             text-align: right;
             letter-spacing: 0.5px;
@@ -116,7 +116,10 @@
             letter-spacing: 1px;
             font-size: ( 14px / $font-size) * 1rem;
             color: #fff;
-            font-family: "HiraKakuPro";
+            transition: all 0.2s linear;
+            &:hover{
+                opacity: 0.7;
+            }
             @include media-breakpoint-tab-sp{
                 max-width: 100%;
             }

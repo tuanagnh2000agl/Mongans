@@ -4,6 +4,15 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    @media only screen and (max-width: 1023px) {
+        padding: 91px 20px 113px;
+    }
+    @include media-breakpoint-tab-sp{
+        padding: 91px 20px 0;
+    }
+    @include media-breakpoint-sp{
+        padding: 91px 0 0;
+    }
     &::after{
         content: "";
         position: absolute;
@@ -35,9 +44,20 @@
         margin-bottom: 12px;
         line-height: 1.2;
         letter-spacing: -5.3px;
+        @include media-breakpoint-tab-sp{
+            letter-spacing: 0;
+        }
+        @include media-breakpoint-sp{
+            font-size: ( 24px / $font-size) * 1rem;
+            padding: 0 16px;
+        }
     }
     &__logan{
         margin-bottom: 42px;
+        @include media-breakpoint-sp{
+            padding: 0 16px;
+            margin-bottom: 20px;
+        }
     }
     &__heading1{
         font-size: ( 50px / $font-size) * 1rem;
@@ -48,10 +68,15 @@
         border-bottom: 2px solid #E13F70;
         padding-bottom: 6px;
         letter-spacing: -6px;
+        @include media-breakpoint-sp{
+            font-size: ( 38px / $font-size) * 1rem;
+        }
     }
     &__direc{
         font-size: ( 14px / $font-size) * 1rem;
-        font-family: "HiraKakuPro";
+        @include media-breakpoint-sp{
+            padding: 0 16px;
+        }
     }
     &__img{
         display: none;

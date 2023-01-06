@@ -6,6 +6,7 @@
     position: relative;
     @include media-breakpoint-sp{
         flex-direction: column;
+        padding: 25px 15px 15px;
     }
     &.--pickup{
         border: 1px solid #8881B6;
@@ -13,7 +14,6 @@
       
     &__title{
         font-size: ( 16px / $font-size) * 1rem;
-        font-family: "HiraKakuPro";
         color: #D7597E;
         width: 35.6%;
         display: flex;
@@ -48,7 +48,6 @@
     }
     &__content{
         font-size: ( 12px / $font-size) * 1rem;
-        font-family: "HiraKakuPro";
         flex: 1;
         padding: 5px 15px 0 49px;
         letter-spacing: -0.3px;
@@ -56,6 +55,7 @@
         font-feature-settings: "palt" 1;
         @include media-breakpoint-sp{
             padding-left: 10px;
+            padding-right: 0;
         }
         &.--edit{
             letter-spacing: -0.2px;

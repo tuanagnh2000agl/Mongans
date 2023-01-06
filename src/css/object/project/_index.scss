@@ -8,6 +8,9 @@
                 text-align: center;
                 padding-top: 62px;
                 line-height: 1.7;
+                @include media-breakpoint-sp{
+                    padding-top: 30px;
+                }
             }
         }
         &__content{
@@ -15,8 +18,15 @@
                 text-align: center;
                 margin-top: 36px;
                 letter-spacing: -1px;
+                @include media-breakpoint-sp{
+                    margin-top: 20px;
+                    letter-spacing: 0;
+                }
                 &:last-child{
                     margin-top: 28px;
+                    @include media-breakpoint-sp{
+                        margin-top: 10px;
+                    }
                 }
             }
         }
@@ -27,7 +37,7 @@
             margin: 44px auto 0;
             padding: 76px 30px 37px;
             @include media-breakpoint-sp{
-                padding: 100px 10px 0;
+                padding: 40px 10px 0;
             }
         }
         &__contain{
@@ -55,6 +65,11 @@
             @include media-breakpoint-tab-sp{
                 flex-direction: column;
                 align-items: center;
+                padding: 0 20px;
+            }
+            @include media-breakpoint-sp{
+                margin-top: 0;
+                padding: 0;
             }
         }
         &__col{
@@ -67,7 +82,7 @@
             }
             @include media-breakpoint-tab-sp{
                width: 45%;
-               margin-bottom: 20px;
+               margin-bottom: 50px;
             }
             @include media-breakpoint-sp{
                 width: 100%;
@@ -151,8 +166,14 @@
         padding-bottom: 80px;
         &__title{
             margin-left: -8px;
+            @include media-breakpoint-sp{
+                margin-left: 0;
+            }
             .c-heading1{
                 letter-spacing: -3.5px;
+                @include media-breakpoint-tab-sp{
+                    letter-spacing: 0;
+                }
                 span{
                     color: #5a4baa;
                     letter-spacing: -5.5px;
@@ -175,6 +196,9 @@
             font-size: ( 14px / $font-size) * 1rem;
             margin-top: 51px;
             line-height: 1.85;
+            @include media-breakpoint-sp{
+                margin-top: 20px;
+            }
         }
         &__col{
             width: 100%;
@@ -198,6 +222,9 @@
         }
         &__pickup{
             margin-top: 89px;
+            @include media-breakpoint-sp{
+                margin-top: 50px;
+            }
             &.--edit{
                 margin-top: 71px;
             }
@@ -234,12 +261,16 @@
         &__table{
             margin-top: 26px;
             padding: 0 30px;
+            @include media-breakpoint-sp{
+                padding: 0;
+            }
         }
         &__note{
             font-size: ( 20px / $font-size) * 1rem;
             font-family: "HannariMincho";
             color: #333333;
             text-align: center;
+            margin-top: 20px;
             span{
                 font-size: ( 26px / $font-size) * 1rem;
                 border-bottom: 1px solid #2A8A99;
@@ -248,6 +279,9 @@
     }
     &__use{
         margin-top: 74px;
+        @include media-breakpoint-sp{
+            margin-top: 40px;
+        }
         .l-inner{
             width: 100%;
             padding: 0;
@@ -265,6 +299,9 @@
             height: 50px;
             margin: 0 auto;
             text-align: center;
+            @include media-breakpoint-sp{
+                padding: 0 10px;
+            }
             img{
                 padding-bottom: 16px;
                 @include media-breakpoint-tab-sp{
@@ -274,6 +311,9 @@
         }
         &__content{
             padding-top: 106px;
+            @include media-breakpoint-sp{
+                padding-top: 50px;
+            }
         }
         &__contain{
             width: 92%;

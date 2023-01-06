@@ -1,6 +1,9 @@
 .c-plant{
     &__heading{
         margin-bottom: 60px;
+        @include media-breakpoint-sp{
+            margin-bottom: 30px;
+        }
         h2{
             font-size: ( 30px / $font-size) * 1rem;
             color: #6559B8;
@@ -10,6 +13,9 @@
             letter-spacing: -3px;
             line-height: 1.6;
             border-bottom: 1px solid #6559B8;
+            @include media-breakpoint-tab-sp{
+                letter-spacing: 0;
+            }
         }
     }
     &__list{

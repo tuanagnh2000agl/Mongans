@@ -48,12 +48,18 @@
     &__content{
         flex: 1;
         margin-left: 16px;
+        @include media-breakpoint-sp{
+            margin-left: 10px;
+        }
     }
     &__title{
         font-size: ( 30px / $font-size) * 1rem;
         color: #E13D6F;
         line-height: 1.5;
         letter-spacing: -4px;
+        @include media-breakpoint-tab-sp{
+            letter-spacing: 0;
+        }
         @include media-breakpoint-sp{
             font-size: ( 22px / $font-size) * 1rem;
         }

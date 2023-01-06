@@ -22,8 +22,21 @@
         }
         &__col{
             width: 50%;
+            a{
+                transition: all 0.2s linear;
+            }
+            @include media-breakpoint-sp{
+                &:first-child{
+                    margin-bottom: 30px;
+                }
+            }
             .--cosme{
                 margin-right: 45px;
+                @include media-breakpoint-sp{
+                    &:first-child{
+                        margin: 0 auto 30px;
+                    }
+                }
             }
             @include media-breakpoint-sp{
                 text-align: center;
@@ -63,7 +76,7 @@
             text-align: center;
             margin-bottom: 20px;
         }
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 374px) {
             width: 48%;
         }
         a{
@@ -95,6 +108,18 @@
         }
         @include media-breakpoint-sp{
             &:nth-child(3){
+                &::after{
+                    display: none;
+                }
+            }
+        }
+        @media only screen and (max-width: 374px) {
+            &:nth-child(3){
+                &::after{
+                    display: unset;
+                }
+            }
+            &:nth-child(2), &:nth-child(4){
                 &::after{
                     display: none;
                 }
