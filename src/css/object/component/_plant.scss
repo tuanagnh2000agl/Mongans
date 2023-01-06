@@ -15,6 +15,7 @@
             border-bottom: 1px solid #6559B8;
             @include media-breakpoint-tab-sp{
                 letter-spacing: 0;
+                font-size: ( 28px / $font-size) * 1rem;
             }
         }
     }
@@ -69,6 +70,12 @@
         letter-spacing: 0.7px;
         text-align: left;
         font-feature-settings: "palt" 1;
+        &.--edit1{
+            padding: 0 13px 0 20px;
+        }
+        &.--edit2{
+            padding: 0 13px 0 20px;
+        }
         @include media-breakpoint-sp{
             text-align: center;
             padding: 0;

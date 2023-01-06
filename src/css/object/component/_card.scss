@@ -11,10 +11,10 @@
         letter-spacing: 2.7px;
     }
     &__item{
-        padding: 30px;
+        padding: 28px 29px;
         background: #fff;
         width: 49%;
-        margin-bottom: 30px;
+        margin-bottom: 41px;
         @include media-breakpoint-tab-sp{
             padding: 15px;
         }
@@ -28,10 +28,16 @@
             font-family: "HiraKakuPro";
             color: #010101;
             margin-top: 16px;
+            line-height: 1.87;
+            &.--edit{
+                letter-spacing: -0.4px;
+            }
             span{
                 float: right;
+                padding-left: 17px;
+                padding-bottom: 3px;
                 img{
-                    margin-top: 4px;
+                    margin-top: 6px;
                 }
             }
             .clear{

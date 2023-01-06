@@ -13,8 +13,14 @@
         margin: 0 auto;
         background: #fff;
         margin-top: -52px;
-        padding: 0 30px;
+        padding: 0 40px;
         font-weight: 500;
+        letter-spacing: -7px;
+        transform: translateX(-5px);
+        @include media-breakpoint-tab-sp{
+            letter-spacing: 0;
+            transform: translateX(0);
+        }
         @include media-breakpoint-sp{
             font-size: ( 40px / $font-size) * 1rem;
             padding: 0 10px;
@@ -56,7 +62,7 @@
         font-size: ( 30px / $font-size) * 1rem;
         color: #E13D6F;
         line-height: 1.5;
-        letter-spacing: -4px;
+        letter-spacing: -3.9px;
         @include media-breakpoint-tab-sp{
             letter-spacing: 0;
         }

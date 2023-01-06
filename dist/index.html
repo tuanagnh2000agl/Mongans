@@ -20,7 +20,7 @@
 	<link rel="apple-touch-icon" href="./apple-touch-icon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="./css/slick.css">
-	<link rel="stylesheet" href="./style.css?50497f6607c419e3">
+	<link rel="stylesheet" href="./style.css?5b1194770f353f43">
 </head>
 <body class="index">
 	<div id="all">
@@ -38,9 +38,15 @@
 						</div>
 						<div class="l-header__search">
 							<div class="l-header__search__info">
-								<span><i class="fas fa-chevron-right"></i>はじめての方へ</span>
-								<span><i class="fas fa-chevron-right"></i>新規会員登録</span>
-								<span><i class="fas fa-chevron-right"></i>お問い合わせ</span>
+								<a href="#">
+									<span><i class="fas fa-chevron-right"></i>はじめての方へ</span>
+								</a>
+								<a href="#">
+									<span><i class="fas fa-chevron-right"></i>新規会員登録</span>
+								</a>
+								<a href="#">
+									<span><i class="fas fa-chevron-right"></i>お問い合わせ</span>
+								</a>
 							</div>
 							<div class="l-header__search__keyword">
 								<input type="text" placeholder="キーワードを入力してください">
@@ -50,12 +56,16 @@
 						<div class="l-header__regis">
 							<ul class="l-header__regis__list">
 								<li class="l-header__regis__login">
-									<img src="./images/common/login.png" alt="ログイン">
-									<span>ログイン</span>
+									<a href="#">
+										<img src="./images/common/login.png" alt="ログイン">
+										<span>ログイン</span>
+									</a>
 								</li>
 								<li class="l-header__regis__mypage">
-									<img src="./images/common/mypage.png" alt="マイページ">
-									<span>マイページ</span>
+									<a href="#">
+										<img src="./images/common/mypage.png" alt="マイページ">
+										<span>マイページ</span>
+									</a>
 								</li>
 							</ul>
 							<a href="#" class="c-btn">
@@ -203,9 +213,8 @@
 						<div class="c-detail">
 							<div class="c-detail__item --edit">
 								<div class="c-detail__cloud --cloud1">
-									<span>
-										豊かな泡立ちで<br>
-										スムース指通りを叶える 
+									<span class="text1">
+										<img src="./images/index/text1.png" alt="text">
 									</span>
 									<img src="./images/index/cloud1.png" alt="cloud1">
 								</div>
@@ -233,9 +242,8 @@
 						<div class="c-detail">
 							<div class="c-detail__item">
 								<div class="c-detail__cloud --cloud2">
-									<span>
-										天然精油をブレンドした<br>
-										心ほぐれる優雅な香リ
+									<span class="text2">
+										<img src="./images/index/text2.png" alt="text">
 									</span>
 									<img src="./images/index/cloud2.png" alt="cloud2">
 								</div>
@@ -264,7 +272,7 @@
 										&lt;smooth&amp;garden&gt;
 									</div>
 									<div class="c-detail__product__capacity --edit">
-										<span>300mL</span>1,900円<span>+税</span>
+										<span class="--ml">300mL</span>1,900円<span class="--tax">+税</span>
 									</div>
 									<a class="c-detail__product__btn">
 										商品詳細はこちら
@@ -450,7 +458,7 @@
 						<div class="c-plant__item">
 							<img src="./images/index/image_plant2.png" alt="ジャスミン油">
 							<h3 class="c-plant__title">ジャスミン油</h3>
-							<p class="c-plant__text">
+							<p class="c-plant__text --edit1">
 								エモリエント作用があり、乾燥や敏感に<br>
 								傾きがちな頭皮をすこやかに保っていき<br>
 								いきとした髪をはぐくみます。
@@ -459,7 +467,7 @@
 						<div class="c-plant__item">
 							<img src="./images/index/image_plant3.png" alt="オリーブ果実油">
 							<h3 class="c-plant__title">オリーブ果実油</h3>
-							<p class="c-plant__text">
+							<p class="c-plant__text --edit2">
 								オレイン酸やビタミンEを豊富に含み、高<br>
 								い保湿力でダメージヘアにツヤを与え、<br>
 								指通りのなめらかな髪へ。
@@ -586,7 +594,7 @@
 				</div>
 			</div>
 			<div class="p-top__use__inner --two">
-				<div class="c-content">
+				<div class="c-content --edit">
 					<div class="c-content__contain">
 						<p class="c-content__mogans">
 							もう髪を傷めない<br>
@@ -688,7 +696,7 @@
 						<div class="c-card__item">
 							<h3 class="c-card__heading">サラサラの髪からふんわりよい香り♪</h3>
 							<div class="c-card__content">
-								<p class="c-card__content__text">
+								<p class="c-card__content__text --edit">
 									<span>
 										<img src="./images/index/image_card2.png" alt="サラサラの髪からふんわりよい香り♪">
 									</span>
@@ -763,61 +771,61 @@
 			<div class="p-top__line__content">
 				<p class="c-text">
 					1本1本にハリ、コシのあるサラサラヘアーを叶えるシャンプー＆コンディショナー。<br>
-						今だけお得なキャンペーンも開催しています。
+					今だけお得なキャンペーンも開催しています。
 				</p>
 			</div>
-			<div class="c-infomation --edit">
-				<div class="c-infomation__list --twoProducts --tab">
-					<div class="c-infomation__item">
-						<div class="c-infomation__img">
+			<div class="c-product">
+				<div class="c-product__list">
+					<div class="c-product__item">
+						<div class="c-product__img">
 							<img src="./images/index/mongas01_big.png" alt="きめ細やかな泡立ちで頭皮をクリーンに">
 						</div>
-						<div class="c-infomation__content">
-							<div class="c-infomation__contain --twoProducts --edit">
-								<h3 class="c-infomation__heading">
+						<div class="c-product__content">
+							<div class="c-product__contain">
+								<h3 class="c-product__heading">
 									<span>きめ細やかな泡立ちで</span>
 									頭皮をクリーンに
 								</h3>
-								<div class="c-infomation__name --twoProducts">
+								<div class="c-product__name">
 									<p>
-										ノンシリコン アミノ酸 ヘアコンディショナー<br>
+										ノンシリコン アミノ酸 ヘアコンディショナー<br class="u-onlyPc">
 										〈スムース＆ガーデン〉
 									</p>
 									<p class="--nonSilicon">
-										non-silicon amino acid hair shampoo <br>
+										non-silicon amino acid hair shampoo <br class="u-onlyPc">
 										&lt;smooth&amp;garden&gt;
 									</p>
 								</div>
-								<p class="c-infomation__capacity --twoProducts --edit"><span class="--ml">300mL</span>1,900円<span class="--tax">+ 税</span></p>
-								<a class="c-infomation__btn">
+								<p class="c-product__capacity"><span class="--ml">300mL</span>1,900円<span class="--tax">+税</span></p>
+								<a class="c-product__btn">
 									商品詳細はこちら
 									<i class="fas fa-chevron-right"></i>
 								</a>
 							</div>
 						</div>
 					</div>
-					<div class="c-infomation__item">
-						<div class="c-infomation__img">
+					<div class="c-product__item">
+						<div class="c-product__img">
 							<img src="./images/index/mongas02_big.png" alt="たっぷりの美容成分で毛先までサラツヤ">
 						</div>
-						<div class="c-infomation__content">
-							<div class="c-infomation__contain --twoProducts --edit">
-								<h3 class="c-infomation__heading">
+						<div class="c-product__content">
+							<div class="c-product__contain">
+								<h3 class="c-product__heading">
 									<span>たっぷりの美容成分で</span>
 									毛先までサラツヤ
 								</h3>
-								<div class="c-infomation__name --twoProducts">
+								<div class="c-product__name">
 									<p>
-										ノンシリコン アミノ酸 ヘアコンディショナー<br>
+										ノンシリコン アミノ酸 ヘアコンディショナー<br class="u-onlyPc">
 										〈スムース＆ガーデン〉
 									</p>
 									<p class="--nonSilicon">
-										non-silicon amino acid hair shampoo <br>
+										non-silicon amino acid hair shampoo <br class="u-onlyPc">
 										&lt;smooth&amp;garden&gt;
 									</p>
 								</div>
-								<p class="c-infomation__capacity --twoProducts"><span class="--ml">300mL×2 本</span>3,800円<span class="--tax">+ 税</span></p>
-								<a class="c-infomation__btn">
+								<p class="c-product__capacity"><span class="--ml">300mL</span>1,900円<span class="--tax">+税</span></p>
+								<a class="c-product__btn">
 									商品詳細はこちら
 									<i class="fas fa-chevron-right"></i>
 								</a>
@@ -860,7 +868,7 @@
 			</div>
 			<div class="c-infomation">
 				<div class="c-infomation__title">まとめ買いにぴったりな2 本セット</div>
-				<div class="c-infomation__list --twoProducts --tab">
+				<div class="c-infomation__list --twoProducts --tab ">
 					<div class="c-infomation__item">
 						<div class="c-infomation__img --twoProducts">
 							<img src="./images/index/mongas_double01.png" alt="ノンシリコン アミノ酸 ヘアシャンプー〈スムース＆ガーデン〉">
@@ -874,7 +882,7 @@
 									</p>
 								</div>
 								<p class="c-infomation__capacity --twoProducts"><span class="--ml">300mL×2 本</span>3,800円<span class="--tax">+ 税</span></p>
-								<a class="c-infomation__btn">
+								<a class="c-infomation__btn --twoProducts">
 									商品詳細はこちら
 									<i class="fas fa-chevron-right"></i>
 								</a>
@@ -894,7 +902,7 @@
 									</p>
 								</div>
 								<p class="c-infomation__capacity --twoProducts"><span class="--ml">300mL×2 本</span>3,800円<span class="--tax">+ 税</span></p>
-								<a class="c-infomation__btn">
+								<a class="c-infomation__btn --twoProducts">
 									商品詳細はこちら
 									<i class="fas fa-chevron-right"></i>
 								</a>

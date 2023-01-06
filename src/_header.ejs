@@ -38,9 +38,15 @@
 						</div>
 						<div class="l-header__search">
 							<div class="l-header__search__info">
-								<span><i class="fas fa-chevron-right"></i>はじめての方へ</span>
-								<span><i class="fas fa-chevron-right"></i>新規会員登録</span>
-								<span><i class="fas fa-chevron-right"></i>お問い合わせ</span>
+								<a href="#">
+									<span><i class="fas fa-chevron-right"></i>はじめての方へ</span>
+								</a>
+								<a href="#">
+									<span><i class="fas fa-chevron-right"></i>新規会員登録</span>
+								</a>
+								<a href="#">
+									<span><i class="fas fa-chevron-right"></i>お問い合わせ</span>
+								</a>
 							</div>
 							<div class="l-header__search__keyword">
 								<input type="text" placeholder="キーワードを入力してください">
@@ -50,12 +56,16 @@
 						<div class="l-header__regis">
 							<ul class="l-header__regis__list">
 								<li class="l-header__regis__login">
-									<img src="<%= getRelativePath('/images/common/login.png'); %>" alt="ログイン">
-									<span>ログイン</span>
+									<a href="#">
+										<img src="<%= getRelativePath('/images/common/login.png'); %>" alt="ログイン">
+										<span>ログイン</span>
+									</a>
 								</li>
 								<li class="l-header__regis__mypage">
-									<img src="<%= getRelativePath('/images/common/mypage.png'); %>" alt="マイページ">
-									<span>マイページ</span>
+									<a href="#">
+										<img src="<%= getRelativePath('/images/common/mypage.png'); %>" alt="マイページ">
+										<span>マイページ</span>
+									</a>
 								</li>
 							</ul>
 							<a href="#" class="c-btn">

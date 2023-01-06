@@ -4,8 +4,19 @@
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
+    &.--edit{
+        padding: 91px 0 116px;
+    }
     @media only screen and (max-width: 1023px) {
         padding: 91px 20px 113px;
+        &.--edit{
+            padding: 91px 20px 0;
+        }
+    }
+    @include media-breakpoint-sp{
+        &.--edit{
+            padding-top: 40px;
+        }
     }
     @include media-breakpoint-tab-sp{
         padding: 91px 20px 0;
@@ -49,13 +60,13 @@
         }
         @include media-breakpoint-sp{
             font-size: ( 24px / $font-size) * 1rem;
-            padding: 0 16px;
+            padding: 0;
         }
     }
     &__logan{
         margin-bottom: 42px;
         @include media-breakpoint-sp{
-            padding: 0 16px;
+            padding: 0;
             margin-bottom: 20px;
         }
     }
@@ -69,13 +80,13 @@
         padding-bottom: 6px;
         letter-spacing: -6px;
         @include media-breakpoint-sp{
-            font-size: ( 38px / $font-size) * 1rem;
+            font-size: ( 32px / $font-size) * 1rem;
         }
     }
     &__direc{
         font-size: ( 14px / $font-size) * 1rem;
         @include media-breakpoint-sp{
-            padding: 0 16px;
+            padding: 0;
         }
     }
     &__img{

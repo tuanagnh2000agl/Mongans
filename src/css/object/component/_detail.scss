@@ -9,10 +9,21 @@
             color: #333333;
             font-size: ( 14px / $font-size) * 1rem;
             position: absolute;
-            min-width: 160px;
-            top: 50%;
-            left: 50%;
+            min-width: 194px;
+            top: 52%;
+            left: 49%;
             transform: translate(-50%, -50%);
+            &.text1{
+                left: 47%;
+            }
+            &.text2{
+                top: 48%;
+                left: 40%;
+                @include media-breakpoint-tab-sp{
+                    top: 50%;
+                    left: 50%;
+                }
+            }
         }
         &.--cloud1{
             margin-top: 45px;
@@ -54,7 +65,9 @@
             margin-top: 57px;
             letter-spacing: -1.1px;
             line-height: 1.6;
-            margin-bottom: 5px;
+            margin-bottom: 6px;
+            font-weight: bold;
+
             &.--edit{
                 text-align: left;
                 @include media-breakpoint-tab-sp{
@@ -69,8 +82,10 @@
             font-size: ( 12px / $font-size) * 1rem;
             color: #555555;
             text-align: right;
-            letter-spacing: 0.5px;
-            margin-bottom: 20px;
+            letter-spacing: 0.6px;
+            line-height: 1.6;
+            margin-bottom: 23px;
+            font-weight: bold;
             &.--edit{
                 text-align: left;
                 @include media-breakpoint-tab-sp{
@@ -86,7 +101,8 @@
             font-family: "HiraKakuPro";
             color: #555555;
             text-align: right;
-            margin-bottom: 13px;
+            margin-bottom: 14px;
+            font-weight: bold;
             &.--edit{
                 text-align: left;
                 @include media-breakpoint-tab-sp{
@@ -98,9 +114,11 @@
             }
             .--ml{
                 font-size: ( 14px / $font-size) * 1rem;
+                margin-right: 10px;
             }
-            .tax{
+            .--tax{
                 font-size: ( 13px / $font-size) * 1rem;
+                margin-left: 7px;
             }
         }
         &__btn{
@@ -117,6 +135,7 @@
             font-size: ( 14px / $font-size) * 1rem;
             color: #fff;
             transition: all 0.2s linear;
+            font-weight: bold;
             &:hover{
                 opacity: 0.7;
             }
