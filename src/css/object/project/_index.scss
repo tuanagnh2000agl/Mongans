@@ -182,6 +182,9 @@
         background: #edebfa;
         padding-top: 49px;
         padding-bottom: 80px;
+        @include media-breakpoint-sp{
+            padding-bottom: 50px;
+        }
         &__title{
             margin-left: -8px;
             @include media-breakpoint-sp{
@@ -245,11 +248,17 @@
             }
             &.--edit{
                 margin-top: 70px;
+                @include media-breakpoint-sp{
+                    margin-top: 30px;
+                }
             }
         }
     }
     &__formula{
         margin-top: 73px;
+        @include media-breakpoint-sp{
+            margin-top: 50px;
+        }
         &__content{
             .--change{
                 font-size: ( 26px / $font-size) * 1rem;

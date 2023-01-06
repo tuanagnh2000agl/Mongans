@@ -66,6 +66,10 @@
             .--irodori{
                 width:  196px;
                 height: 47px;
+                @include media-breakpoint-tab-sp{
+                    width: unset;
+                    height: unset;
+                }
             }
         }
     }

@@ -1099,6 +1099,13 @@ input[type="checkbox"] {
   height: 47px;
 }
 
+@media only screen and (max-width: 959px) {
+  .l-footer__logo__col .--irodori {
+    width: unset;
+    height: unset;
+  }
+}
+
 .l-footer__menu {
   background: #e7e7e7;
 }
@@ -3506,6 +3513,12 @@ input[type="checkbox"] {
   padding-bottom: 80px;
 }
 
+@media only screen and (max-width: 739px) {
+  .p-top__ingredient {
+    padding-bottom: 50px;
+  }
+}
+
 .p-top__ingredient__title {
   margin-left: -8px;
 }
@@ -3602,8 +3615,20 @@ input[type="checkbox"] {
   margin-top: 70px;
 }
 
+@media only screen and (max-width: 739px) {
+  .p-top__ingredient__pickup.--edit {
+    margin-top: 30px;
+  }
+}
+
 .p-top__formula {
   margin-top: 73px;
+}
+
+@media only screen and (max-width: 739px) {
+  .p-top__formula {
+    margin-top: 50px;
+  }
 }
 
 .p-top__formula__content .--change {
