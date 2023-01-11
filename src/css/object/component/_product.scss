@@ -44,7 +44,7 @@
     }
     &__contain{
         margin-left: 18px;
-        @include media-breakpoint-tab-sp{
+        @include media-breakpoint-sp{
             margin-left: 0;
         }
     }

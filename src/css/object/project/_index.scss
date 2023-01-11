@@ -152,6 +152,17 @@
         &__heading{
             margin-top: 145px;
             margin-bottom: 55px;
+            @include media-breakpoint-tab-sp{
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+            @media all and (-ms-high-contrast:none)
+            {
+                text-align: center;
+                .c-heading1{
+                    display: inline-block;
+                }
+            }
         }
         &__reason{
             font-size: 26px;
@@ -212,6 +223,9 @@
             margin-left: -5px;
             margin-top: 29px;
             line-height: 1.4;
+            @include media-breakpoint-tab-sp{
+                font-size: ( 18px / $font-size) * 1rem;
+            }
         }
         &__detail{
             font-size: ( 14px / $font-size) * 1rem;
@@ -270,6 +284,19 @@
                 margin-left: -7px;
                 line-height: 1;
             }
+            @media all and (-ms-high-contrast:none)
+            {
+               .ie{
+                    font-size: ( 26px / $font-size) * 1rem;
+                    font-family: "HannariMincho";
+                    color: #333333;
+                    display: block;
+                    text-align: center;
+                    letter-spacing: -2.5px;
+                    margin-left: -7px;
+                    line-height: 1;
+               }
+            }
             .c-heading1{
                 text-align: center;  
                 line-height: 1;            
@@ -316,6 +343,21 @@
             padding: 0;
         }
         &__inner{
+            @media all and (-ms-high-contrast:none)
+            {
+                &.ie{
+                    padding-bottom: 80px;
+                    background-image: url('./images/index/background_grid.png');
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-color: #fbf7f6;
+                }
+                &.ieTwo{
+                    background-image: url(./images/index/background_flossom.jpg);
+                    background-repeat: no-repeat;
+                    background-size: cover;  
+                }
+            }
             &.--one{
                 padding-bottom: 80px;
                 background-image: url('./images/index/background_grid.png');

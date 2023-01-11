@@ -109,6 +109,23 @@
 						</ul>
 						<div class="l-header__menu__login">
 							<div class="l-header__menu__regis">
+								<div class="l-header__menu__search">
+									<div class="l-header__menu__search__info">
+										<a href="#">
+											<span><i class="fas fa-chevron-right"></i>はじめての方へ</span>
+										</a>
+										<a href="#">
+											<span><i class="fas fa-chevron-right"></i>新規会員登録</span>
+										</a>
+										<a href="#">
+											<span><i class="fas fa-chevron-right"></i>お問い合わせ</span>
+										</a>
+									</div>
+									<div class="l-header__menu__search__keyword">
+										<input type="text" placeholder="キーワードを入力してください">
+										<i class="fa-solid fa-magnifying-glass"></i>
+									</div>
+								</div>
 								<ul class="l-header__menu__regis__list">
 									<li class="l-header__menu__regis__login">
 										<a href="#">
@@ -142,7 +159,7 @@
 		<div class="l-content">
 			<main id="l-primary"><% if (getPageId() == 'index') { %>
 				<div class="c-mainvisual">
-					<img src="<%= getRelativePath('/images/common/mainvisual.jpg'); %>" alt="Image manvisual">
+					<img src="<%= getRelativePath('/images/common/mainvisual.jpg'); %>" alt="いま、髪はー歩先のうれしさへ。">
 				</div><% } else { %>
 				<div class="c-pagetitle">
 					<div class="c-pagetitle__image"></div>
@@ -154,3 +171,4 @@
 				<% } %>
 				<%- include('_breadline'); %>
 				<article class="<%= getArticleClass(); %>" id="js-articles">
+					

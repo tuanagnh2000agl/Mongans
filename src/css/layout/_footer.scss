@@ -12,6 +12,12 @@
                 flex-direction: column;
             }
         }
+        @media all and (-ms-high-contrast:none)
+        {
+            &.ie{
+                display: flex;
+            }
+        }
     }
 	&__logo{
         display: flex;
@@ -54,6 +60,13 @@
                     &:first-child{
                         margin: 0 auto 30px;
                     }
+                }
+            }
+            @media all and (-ms-high-contrast:none)
+            {
+                .ie{
+                    margin-right: 49px;
+                    margin-top: 5px;
                 }
             }
             @include media-breakpoint-sp{
@@ -106,6 +119,7 @@
             padding: 0 12px;
             letter-spacing: 0.6px;
             transition: all 0.2s linear;
+            color: #333333;
             &:hover{
                 opacity: 0.7;
             }

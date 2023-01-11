@@ -54,7 +54,7 @@
         color: #414141;
         margin-bottom: 12px;
         line-height: 1.2;
-        letter-spacing: -5.3px;
+        letter-spacing: -2px;
         @include media-breakpoint-tab-sp{
             letter-spacing: 0;
         }
@@ -79,6 +79,10 @@
         border-bottom: 2px solid #E13F70;
         padding-bottom: 6px;
         letter-spacing: -6px;
+        @media all and (-ms-high-contrast:none)
+        {
+            display: inline-block;
+        }
         @include media-breakpoint-sp{
             font-size: ( 32px / $font-size) * 1rem;
         }

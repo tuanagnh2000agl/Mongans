@@ -15,6 +15,7 @@
         background: #fff;
         width: 49%;
         margin-bottom: 41px;
+        box-shadow: 0px 1px 1px 0 rgba(219, 219, 219, 0.75);
         @include media-breakpoint-tab-sp{
             padding: 15px;
         }

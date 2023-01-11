@@ -24,5 +24,13 @@ jQuery(function($) {
 		}
 	});
 
+	// call when on sp screen -- footer
+	$(window).on('resize', function() {
+		if($(this).width() < 960) {
+			$('.l-header__menu').css('transition','all 0.3s linear');
+		}else{
+			$('.l-header__menu').css('transition','unset');
+		}
+	});
 
 });

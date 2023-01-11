@@ -16,9 +16,23 @@
         padding: 14px 0;
         text-align: center;
     }
-    
     &__list{
         padding: 33px 10px 35px;
+        @include media-breakpoint-tab{
+            padding: 33px 28px 35px 10px;
+        }
+        @media all and (-ms-high-contrast:none)
+        {
+            &.ie{
+                display: flex;
+                .c-infomation__item{
+                    width: 43%;
+                    &:last-child{
+                        margin-left: 88px;
+                    }
+                }
+            }
+        }
         &.--twoProducts{
             display: flex;
             &.--tab{
@@ -77,6 +91,9 @@
         &.--twoProducts{
             width: 25%;
             text-align: center;
+            @include media-breakpoint-tab-sp{
+                width: fit-content;
+            }
             @include media-breakpoint-sp{
                 width: 100%;
             }
@@ -90,6 +107,9 @@
         &.--twoProducts{
             flex: 1;
             margin-left: 16px;
+            @include media-breakpoint-tab-sp{
+                max-width: 100%;
+            }
             @include media-breakpoint-sp{
                 margin-left: 0;
             }
@@ -98,8 +118,6 @@
             display: flex;
             flex-direction: column-reverse;
             margin-left: 0;
-        }
-        @include media-breakpoint-sp{
             max-width: 100%;
         }
     }
@@ -149,6 +167,32 @@
             letter-spacing: 2.4px;
             font-feature-settings: "palt" 1;
         }
+        @media all and (-ms-high-contrast:none)
+        {
+            &.ie{
+                margin: 0 0 0 10px;
+                line-height: 1.4;
+                .ieml{
+                    font-size: ( 14px / $font-size) * 1rem;
+                    letter-spacing: 2.4px;
+                    display: block;
+                }
+                .ietax{
+                    font-size: ( 20px / $font-size) * 1rem;
+                }
+            }
+            .ieml{
+                font-size: ( 16px / $font-size) * 1rem;
+                letter-spacing: 4px;
+                margin-right: 18px;
+            }
+            .ietax{
+                font-size: ( 13px / $font-size) * 1rem;
+                letter-spacing: 2.4px;
+                font-feature-settings: "palt" 1;
+            }
+        }
+       
         &.--twoProducts{
             margin: 0 0 0 10px;
             line-height: 1.4;
@@ -201,6 +245,9 @@
             i{
                 right: 23px;
             }
+        }
+        @include media-breakpoint-tab-sp{
+            margin-left: 0;
         }
         &:hover{
             opacity: 0.7;

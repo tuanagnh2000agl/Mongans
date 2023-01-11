@@ -36,7 +36,7 @@
 						<h2 class="c-functions__heading">3つの働き</h2>
 						<div class="c-functions__list">
 							<div class="c-functions__item">
-								<span>1</span>
+								<p class="cicle"><span>1</span></p>
 								<div class="c-functions__content">
 									<h3 class="c-functions__title">毛穴をふさがず、髪の芯に美髪成分を送り込む。</h3>
 									<p class="c-functions__text">
@@ -46,7 +46,7 @@
 								</div>
 							</div>
 							<div class="c-functions__item">
-								<span>2</span>
+								<p class="cicle"><span>2</span></p>
 								<div class="c-functions__content">
 									<h3 class="c-functions__title">髪と頭皮のための厳選成分で「驚くほどサラッと」した髪へ｡</h3>
 									<p class="c-functions__text">
@@ -56,7 +56,7 @@
 								</div>
 							</div>
 							<div class="c-functions__item">
-								<span>3</span>
+								<p class="cicle"><span>3</span></p>
 								<div class="c-functions__content">
 									<h3 class="c-functions__title">毛穴をふさがず、髪の芯に美髪成分を送り込む。</h3>
 									<p class="c-functions__text">
@@ -169,7 +169,7 @@
 												ヘアコンディショナー〈スムース＆ガーデン〉
 											</p>
 										</div>
-										<p class="c-infomation__capacity"><span class="--ml">各300mL</span>3,800円<span class="--tax">+税・送料（540円～）</span></p>
+										<p class="c-infomation__capacity"><span class="--ml ieml">各300mL</span>3,800円<span class="--tax ietax">+税・送料（540円～）</span></p>
 										<a class="c-infomation__btn">
 											商品詳細はこちら
 											<i class="fas fa-chevron-right"></i>
@@ -213,16 +213,16 @@
 											</h3>
 											<ul class="c-statistical__reason__list">
 												<li class="c-statistical__reason__item">
-													<span class="--iconTick"></span><span class="--reason">髪がバサつく</span>
+													<span class="--iconTick ie"></span><span class="--reason ieReason">髪がバサつく</span>
 												</li>
 												<li class="c-statistical__reason__item">
-													<span class="--iconTick"></span><span class="--reason">髪にツヤがない</span>
+													<span class="--iconTick ie"></span><span class="--reason ieReason">髪にツヤがない</span>
 												</li>
 												<li class="c-statistical__reason__item">
-													<span class="--iconTick"></span><span class="--reason">頭皮トラブルがある</span>
+													<span class="--iconTick ie"></span><span class="--reason ieReason">頭皮トラブルがある</span>
 												</li>
 												<li class="c-statistical__reason__item">
-													<span class="--iconTick"></span><span class="--reason">髪が細くたってきた</span>
+													<span class="--iconTick ie"></span><span class="--reason ieReason">髪が細くたってきた</span>
 												</li>
 											</ul>
 										</div>
@@ -287,8 +287,8 @@
 				</div>
 			</div>
 			<div class="p-top__ingredient__pickup">
-				<div class="c-note --pickup">
-					<div class="c-note__title --pickup">
+				<div class="c-note --pickup ie">
+					<div class="c-note__title --pickup ie">
 						アミノ酸シャンプーと<br>
 						アミノ酸配合シャンプーの違い
 					</div>
@@ -305,9 +305,11 @@
 							代表的な植物由来成分
 						</h2>
 					</div>
-					<div class="c-plant__list --three">
+					<div class="c-plant__list --three ie">
 						<div class="c-plant__item">
-							<img src="<%= getRelativePath('/images/index/image_plant1.png'); %>" alt="ジャスミン油">
+							<div class="c-plant__item__img">
+								<img src="<%= getRelativePath('/images/index/image_plant1.jpg'); %>" alt="ジャスミン油">
+							</div>
 							<h3 class="c-plant__title">ジャスミン油</h3>
 							<p class="c-plant__text">
 								心をリラックスさせる穏やかな香り。肌を<br>
@@ -316,7 +318,9 @@
 							</p>
 						</div>
 						<div class="c-plant__item">
-							<img src="<%= getRelativePath('/images/index/image_plant2.png'); %>" alt="ジャスミン油">
+							<div class="c-plant__item__img">
+								<img src="<%= getRelativePath('/images/index/image_plant2.jpg'); %>" alt="ジャスミン油">
+							</div>
 							<h3 class="c-plant__title">ジャスミン油</h3>
 							<p class="c-plant__text --edit1">
 								エモリエント作用があり、乾燥や敏感に<br>
@@ -325,7 +329,9 @@
 							</p>
 						</div>
 						<div class="c-plant__item">
-							<img src="<%= getRelativePath('/images/index/image_plant3.png'); %>" alt="オリーブ果実油">
+							<div class="c-plant__item__img">
+								<img src="<%= getRelativePath('/images/index/image_plant3.jpg'); %>" alt="オリーブ果実油">
+							</div>
 							<h3 class="c-plant__title">オリーブ果実油</h3>
 							<p class="c-plant__text --edit2">
 								オレイン酸やビタミンEを豊富に含み、高<br>
@@ -336,24 +342,32 @@
 					</div>
 					<div class="c-plant__list --four">
 						<div class="c-plant__item">
-							<img src="<%= getRelativePath('/images/index/image_plant4.png'); %>" alt="ツバキ種子油">
+							<div class="c-plant__item__img edit">
+								<img src="<%= getRelativePath('/images/index/image_plant4.jpg'); %>" alt="ツバキ種子油">
+							</div>
 							<h3 class="c-plant__title">ツバキ種子油</h3>
 							<p class="c-plant__text">
 								頭皮に栄養を与えて髪に豊かなうるおいと弾力をもたらし、切れ毛や枝毛のないツヤ髪をはぐくみます。
 							</p>
 						</div>
 						<div class="c-plant__item">
-							<img src="<%= getRelativePath('/images/index/image_plant5.png'); %>" alt="月見草油">
+							<div class="c-plant__item__img edit">
+								<img src="<%= getRelativePath('/images/index/image_plant5.jpg'); %>" alt="月見草油">
+							</div>
 							<h3 class="c-plant__title">月見草油</h3>
 							<p class="c-plant__text">肌を保護するγ-リノレン酸や保湿成分のリノール酸が豊富。乾燥ダメージをケアしてすこやかな頭皮環境へ。</p>
 						</div>
 						<div class="c-plant__item">
-							<img src="<%= getRelativePath('/images/index/image_plant6.png'); %>" alt="アブラナ">
+							<div class="c-plant__item__img edit">
+								<img src="<%= getRelativePath('/images/index/image_plant6.jpg'); %>" alt="アブラナ">
+							</div>
 							<h3 class="c-plant__title">アブラナ</h3>
 							<p class="c-plant__text">髪と頭皮をうるおいのヴェールで包み込み、パサつきを抑えて芯からしなやかに弾む髪へと導きます。</p>
 						</div>
 						<div class="c-plant__item">
-							<img src="<%= getRelativePath('/images/index/image_plant7.png'); %>" alt="オレンジ果皮油">
+							<div class="c-plant__item__img edit">
+								<img src="<%= getRelativePath('/images/index/image_plant7.jpg'); %>" alt="オレンジ果皮油">
+							</div>
 							<h3 class="c-plant__title">オレンジ果皮油</h3>
 							<p class="c-plant__text">
 								フレッシュで甘い香り。天然のフルーツ酸がキューティクルを整え、光を放つようなツヤとハリを与えます。
@@ -363,8 +377,8 @@
 				</div>
 			</div>
 			<div class="p-top__ingredient__pickup --edit">
-				<div class="c-note --pickup">
-					<div class="c-note__title --pickup">
+				<div class="c-note --pickup ie">
+					<div class="c-note__title --pickup ie">
 						香りと作用の両面からアプローチ
 					</div>
 					<div class="c-note__content --pickup">
@@ -380,10 +394,10 @@
 	<section class="p-top__formula">
 		<div class="l-inner --narrow">
 			<div class="p-top__formula__content">
-				<span class="--change">
+				<span class="--change ie">
 					髪へのやさしさを追求した
 				</span>
-				<h2 class="c-heading1 --fs1">12の<span>無添加処方</span></h2>
+				<h2 class="c-heading1 --fs1 ieTitle">12の<span>無添加処方</span></h2>
 				<p class="c-text">
 					油由来の界面活性剤はもちろん、シリコンや合成ポリマーといった<br>
 					毛穴の詰まりの原因となるコーティング剤、パラベンなどの<span>保存料は一切使用していません。</span><br>
@@ -421,7 +435,7 @@
 	</section>
 	<section class="p-top__use">
 		<div class="l-inner">
-			<div class="p-top__use__inner --one">
+			<div class="p-top__use__inner --one ie">
 				<div class="p-top__use__contain">
 					<div class="p-top__use__content">
 						<div class="p-top__use__heading">
@@ -453,7 +467,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="p-top__use__inner --two">
+			<div class="p-top__use__inner --two ieTwo">
 				<div class="c-content --edit">
 					<div class="c-content__contain">
 						<p class="c-content__mogans">
@@ -713,7 +727,7 @@
 										ヘアコンディショナー〈スムース＆ガーデン〉
 									</p>
 								</div>
-								<p class="c-infomation__capacity"><span class="--ml">各300mL</span>3,800円<span class="--tax">+税・送料（540円～）</span></p>
+								<p class="c-infomation__capacity"><span class="--ml ieml">各300mL</span>3,800円<span class="--tax ietax">+税・送料（540円～）</span></p>
 								<a class="c-infomation__btn">
 									商品詳細はこちら
 									<i class="fas fa-chevron-right"></i>
@@ -728,7 +742,7 @@
 			</div>
 			<div class="c-infomation">
 				<div class="c-infomation__title">まとめ買いにぴったりな2 本セット</div>
-				<div class="c-infomation__list --twoProducts --tab ">
+				<div class="c-infomation__list --twoProducts --tab ie">
 					<div class="c-infomation__item">
 						<div class="c-infomation__img --twoProducts">
 							<img src="<%= getRelativePath('/images/index/mongas_double01.png'); %>" alt="ノンシリコン アミノ酸 ヘアシャンプー〈スムース＆ガーデン〉">
@@ -741,7 +755,7 @@
 										〈スムース＆ガーデン〉
 									</p>
 								</div>
-								<p class="c-infomation__capacity --twoProducts"><span class="--ml">300mL×2 本</span>3,800円<span class="--tax">+ 税</span></p>
+								<p class="c-infomation__capacity --twoProducts ie"><span class="--ml ieml">300mL×2 本</span>3,800円<span class="--tax ietax">+ 税</span></p>
 								<a class="c-infomation__btn --twoProducts">
 									商品詳細はこちら
 									<i class="fas fa-chevron-right"></i>
@@ -761,7 +775,7 @@
 										〈スムース＆ガーデン〉
 									</p>
 								</div>
-								<p class="c-infomation__capacity --twoProducts"><span class="--ml">300mL×2 本</span>3,800円<span class="--tax">+ 税</span></p>
+								<p class="c-infomation__capacity --twoProducts ie"><span class="--ml ieml">300mL×2 本</span>3,800円<span class="--tax ietax">+ 税</span></p>
 								<a class="c-infomation__btn --twoProducts">
 									商品詳細はこちら
 									<i class="fas fa-chevron-right"></i>
